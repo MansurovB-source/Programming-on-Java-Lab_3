@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * Created by IntelliJ IDEA.
  * Author: Behruz Mansurov
@@ -73,6 +75,27 @@ public class Dunno extends HumanConstruct implements Creature {
     }
 
     void talkAboutRocket() {
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Dunno dunno = (Dunno) o;
+        return this.getName().equals(dunno.getName()) && this.getName().equals(dunno.getName()) && this.planet == dunno.planet;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.getName(), this.getLastName(), planet);
+    }
+
+    @Override
+    public String toString() {
+        return "Dunno{" +
+                "name=" + this.getName() + " " +
+                "lastname=" + this.getLastName() + " " +
+                "planet=" + planet +
+                '}';
     }
 }
