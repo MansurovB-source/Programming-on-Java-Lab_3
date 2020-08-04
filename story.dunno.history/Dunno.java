@@ -44,25 +44,30 @@ public class Dunno extends HumanConstruct implements Creature {
 
     void getQuestions(HumanConstruct humanConstruct, int question_number) {
 
-        System.out.printf(" Question from %s %s: \n", humanConstruct.getName(), humanConstruct.getName());
-        System.out.printf(" Answer from %s %s \n", this.getName(), this.getName());
+        System.out.printf(" Answer from %s %s: \n", this.getName(), this.getName());
         if(humanConstruct instanceof Journalist) {
             switch (question_number) {
                 case 0:
                     System.out.println("Ел специальную еду для космонавтов из тюбика зубной пасты");
+                    break;
                 case 1:
                     System.out.println("Сны были как на земле, то есть обычные");
+                    break;
                 case 2:
                     System.out.println("Жители Давилона были очень гостеприимны");
+                    break;
             }
         } else {
             switch (question_number) {
                 case 0:
-                    System.out.println("Я увидел много звезд, планет и Солнце");
+                    System.out.println("Я увидел много звезд");
+                    break;
                 case 1:
                     System.out.println("На поверхности Земли можно было наблюдать над горами и облаками");
+                    break;
                 case 2:
                     System.out.println("Большая Луна похожа на Землю там мног зелени, у них энергетический прорыв");
+                    break;
             }
         }
     }

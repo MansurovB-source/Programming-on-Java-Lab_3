@@ -30,6 +30,7 @@ public class Journalist extends HumanConstruct {
     }
 
     public int askQuestion() {
+        System.out.printf(" Question from journalist community %s %s: \n", this.getName(), this.getName());
         Random random = new Random();
         switch (random.nextInt(3)) {
             case 0:

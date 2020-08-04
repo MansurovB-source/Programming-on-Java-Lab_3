@@ -30,6 +30,7 @@ public class Scholarly extends HumanConstruct {
     }
 
     public int askQuestion() {
+        System.out.printf(" Question from science community %s %s: \n", this.getName(), this.getName());
         Random random = new Random();
         switch (random.nextInt(3)) {
             case 0:
