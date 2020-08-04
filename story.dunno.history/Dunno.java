@@ -4,7 +4,7 @@
  */
 public class Dunno extends HumanConstruct implements Creature {
 
-    Planet planet;
+    private Planet planet;
 
     public Dunno(String name, String lastname, Planet planet) {
         super(name, lastname);
@@ -43,6 +43,8 @@ public class Dunno extends HumanConstruct implements Creature {
     }
 
     void getQuestions(HumanConstruct humanConstruct, int question_number) {
+        System.out.printf(" Question from %s %s \n", humanConstruct.getName(), humanConstruct.getName());
+        System.out.printf(" Answer from %s %s \n", humanConstruct.getName(), humanConstruct.getName());
         if(humanConstruct instanceof Journalist) {
             switch (question_number) {
                 case 0:
@@ -64,9 +66,7 @@ public class Dunno extends HumanConstruct implements Creature {
         }
     }
 
-    void talkAboutrocket() {
-        if( planet == Planet.EARTH) {
-            
-        }
+    void talkAboutRocket() {
+
     }
 }

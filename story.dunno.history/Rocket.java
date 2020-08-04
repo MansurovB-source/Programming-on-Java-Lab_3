@@ -11,6 +11,4 @@ public class Rocket extends Transport implements Movement{
     public boolean move(Planet from, Planet to) {
         return true;
     }
-
-
 }
