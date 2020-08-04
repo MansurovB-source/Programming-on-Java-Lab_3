@@ -2,13 +2,34 @@
  * Created by IntelliJ IDEA.
  * Author: Behruz Mansurov
  */
-public class Dunno implements Creature, Human {
-    String name;
-    String lastname;
+public class Dunno extends HumanConstruct implements Creature {
+
     Planet planet;
+
+    public Dunno(String name, String lastname, Planet planet) {
+        super(name, lastname);
+        this.planet = planet;
+    }
+
+
+    @Override
+    public String getLastName() {
+        return super.getLastName();
+    }
+
+    @Override
+    public void setLastName(String lastName) {
+        super.setLastName(lastName);
+    }
+
     @Override
     public String getName() {
-        return null;
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
     }
 
     @Override
@@ -21,13 +42,31 @@ public class Dunno implements Creature, Human {
 
     }
 
-    @Override
-    public void setName(String name) {
-
+    void getQuestions(HumanConstruct humanConstruct, int question_number) {
+        if(humanConstruct instanceof Journalist) {
+            switch (question_number) {
+                case 0:
+                    System.out.println("");
+                case 1:
+                    System.out.println("dd");
+                case 2:
+                    System.out.println("ddd");
+            }
+        } else {
+            switch (question_number) {
+                case 0:
+                    System.out.println("");
+                case 1:
+                    System.out.println("dd");
+                case 2:
+                    System.out.println("ddd");
+            }
+        }
     }
 
-    @Override
-    public void setLastName(String lastName) {
-
+    void talkAboutrocket() {
+        if( planet == Planet.EARTH) {
+            
+        }
     }
 }

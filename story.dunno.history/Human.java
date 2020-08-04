@@ -4,5 +4,5 @@
  */
 public interface Human {
     void setLastName(String lastName);
-    String getName();
+    String getLastName();
 }

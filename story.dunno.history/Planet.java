@@ -4,7 +4,6 @@
  */
 public enum Planet {
     EARTH,
-    MOON,
-    DAVILONE;
+    MOON;
 
 }
