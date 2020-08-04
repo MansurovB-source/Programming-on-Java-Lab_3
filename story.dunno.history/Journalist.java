@@ -33,13 +33,13 @@ public class Journalist extends HumanConstruct {
         Random random = new Random();
         switch (random.nextInt(3)) {
             case 0:
-                System.out.println("");
+                System.out.println("Что вы ели и пили на ракете?");
                 return 0;
             case 1:
-                System.out.println("dd");
+                System.out.println("Какие сны вы видели?");
                 return 1;
             case 2:
-                System.out.println("ddd");
+                System.out.println("Понравились ли вам жители Давилона?");
                 return 2;
         }
         return 0;

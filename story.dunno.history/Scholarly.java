@@ -33,16 +33,15 @@ public class Scholarly extends HumanConstruct {
         Random random = new Random();
         switch (random.nextInt(3)) {
             case 0:
-                System.out.println("");
+                System.out.println("Что вы видели во время путишествий?");
                 return 0;
             case 1:
-                System.out.println("dd");
+                System.out.println("Что вы наблюдали на поверхности Земли?");
                 return 1;
             case 2:
-                System.out.println("ddd");
+                System.out.println("Как выглядит планета Большая Луна?");
                 return 2;
         }
-
         return 0;
     }
 }
